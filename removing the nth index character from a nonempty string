@@ -1,0 +1,8 @@
+#Write a Python program to remove the nth index character from a nonempty string.
+def remove(string, n):
+ first=string[:n]
+ last=string[n+1:]
+ return first+last 
+string=str("enter the string:")
+n=int(input("enter the index of character to remove"))
+print("modefied string",remove(string,n))
